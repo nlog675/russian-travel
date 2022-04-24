@@ -1,25 +1,26 @@
-.lead {
+.intro {
     width: calc(100% - 2*148px);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
 }
 
 @media screen and (max-width: 1024px) {
-    .lead {
+    .intro {
         width: calc(100% - 2*48px);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .lead {
-        width: 100%;
+    .intro {
+        width: calc(100% - 2*24px);
     }
 }
 
 @media screen and (max-width: 425px) {
-    .lead {
-        width: 100%;
+    .intro {
+        width: calc(100% - 2*16px);
     }
 }

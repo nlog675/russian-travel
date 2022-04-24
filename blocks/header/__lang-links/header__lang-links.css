@@ -8,3 +8,10 @@
     line-height: 1.17;
     display: flex;
 }
+
+@media screen and (max-width: 425px) {
+    .header__lang-links {
+        font-size: 18px;
+        line-height: 1.11;
+    }
+}
