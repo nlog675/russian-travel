@@ -1,3 +1,8 @@
 .header__lang-link:first-of-type {
     margin-right: 18px;
 }
+
+.header__link:hover {
+    opacity: .8;
+    transition: .3s linear;
+}

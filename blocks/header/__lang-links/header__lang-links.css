@@ -9,7 +9,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .header__lang-links {
         font-size: 18px;
         line-height: 1.11;
