@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Путешествия по России</title>
 </head>
 <body class="page">
@@ -11,13 +11,13 @@
   <header class="header">
     <img src="./images/header-logo.svg" alt="Логотип Россия" class="header__logo">
     <ul class="header__lang-links">
-      <li class="header__lang-link header__lang-link_active">
-        <a class="page__link" href="#">
+      <li class="header__list-item">
+        <a class="header__lang-link header__lang-link_active" href="#">
           Ru
         </a>
       </li>
-      <li class="header__lang-link">
-        <a class="page__link" href="#">
+      <li class="header__list-item">
+        <a class="header__lang-link" href="#">
           En</a>
         </li>
     </ul>
@@ -28,13 +28,15 @@
       <h1 class="lead__title">
         Путешествия по России
       </h1>
-      <h2 class="lead__subtitle">
+      <p class="lead__subtitle">
         Настоящая страна не в выпусках новостей, а здесь.
-      </h2>
-      <img src="./images/lead-polka.jpg" alt="Карта маршрута от Пскова до Улан-Удэ на фоне спальной полки в поезде" class="lead__image">
-      <p class="lead__caption">
-        ваша полка — верхняя
       </p>
+      <figure class="lead__figure">
+      <img src="./images/lead-polka.jpg" alt="Карта маршрута от Пскова до Улан-Удэ на фоне спальной полки в поезде" class="lead__image">
+      <figcaption class="lead__caption">
+        ваша полка — верхняя
+      </figcaption>
+    </figure>
     </section>
     
     <section class="intro">
@@ -68,20 +70,44 @@
     </section>
 
     <section class="photo-grid">
-      <div class="photo-grid__container">
-        <img src="./images/photo-grid-train.jpg" alt="Окно поезда" class="photo-grid__item">
-        <img src="./images/photo-grid-atharva-tulsi.jpg" alt="Заснеженная гора" class="photo-grid__item">
-        <img src="./images/photo-grid-tuman.jpg" alt="Собака на стоге сена" class="photo-grid__item">
-        <img src="./images/photo-grid-sochi.jpg" alt="Туманный лес" class="photo-grid__item">
-        <img src="./images/photo-grid-arisa.jpg" alt="Колесо на льду" class="photo-grid__item">
-        <img src="./images/photo-grid-baikal.jpg" alt="Пляж" class="photo-grid__item">
-        <img src="./images/photo-grid-elbrus.jpg" alt="Эльбрус" class="photo-grid__item">
-        <img src="./images/photo-grid-kondratiev.jpg" alt="Знак пешеходного перехода" class="photo-grid__item">
-        <img src="./images/photo-grid-kamchatka-1.jpg" alt="Туманная Камчатка" class="photo-grid__item">
-        <img src="./images/photo-grid-kamchatka-2.jpg" alt="Камчатка" class="photo-grid__item">
-        <img src="./images/photo-grid-baikal-2.jpg" alt="Байкал" class="photo-grid__item">
-        <img src="./images/photo-grid-ergaki.jpg" alt="Эргаки" class="photo-grid__item">
-    </div>
+      <ul class="photo-grid__container">
+        <li>
+          <img src="./images/photo-grid-train.jpg" alt="Окно поезда" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-atharva-tulsi.jpg" alt="Заснеженная гора" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-tuman.jpg" alt="Собака на стоге сена" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-sochi.jpg" alt="Туманный лес" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-arisa.jpg" alt="Колесо на льду" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-baikal.jpg" alt="Пляж" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-elbrus.jpg" alt="Эльбрус" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-kondratiev.jpg" alt="Знак пешеходного перехода" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-kamchatka-1.jpg" alt="Туманная Камчатка" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-kamchatka-2.jpg" alt="Камчатка" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-baikal-2.jpg" alt="Байкал" class="photo-grid__item">
+        </li>
+        <li>
+          <img src="./images/photo-grid-ergaki.jpg" alt="Эргаки" class="photo-grid__item">
+        </li>
+      </ul>
     </section>
 
     <section class="places">
@@ -218,7 +244,7 @@
     </section>
 
     <section class="cover">
-      <a href="#" class="cover__background">
+      <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="blank" class="cover__background">
         <h2 class="cover__title">
           До Байкала «на&nbsp;собаках»
         </h2>
